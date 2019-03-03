@@ -1,0 +1,32 @@
+{
+  "name": "disono/archie",
+  "description": "Simple PHP Framework",
+  "homepage": "https://www.webmons.com",
+  "support": {
+    "email": "webmonsph@gmail.com"
+  },
+  "keywords": [
+    "php",
+    "framework",
+    "archie",
+    "disono"
+  ],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Archie Disono",
+      "email": "webmonsph@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "autoload": {
+        "psr-4": {
+            "Disono\\": "/"
+        },
+        "files": [
+            "functions.php"
+        ]
+    }
+}
