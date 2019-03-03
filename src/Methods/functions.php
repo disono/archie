@@ -1,6 +1,6 @@
 <?php
 
-use Disono\View\DSTwig;
+use Archie\View\DSTwig;
 $GLOBALS['__config'] = [];
 
 if (!function_exists('view')) {
