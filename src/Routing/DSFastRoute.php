@@ -1,6 +1,6 @@
 <?php
 
-namespace Disono\Routing;
+namespace Archie\Routing;
 
 class DSFastRoute
 {

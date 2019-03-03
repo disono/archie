@@ -1,6 +1,6 @@
 <?php
 
-namespace Disono\Security;
+namespace Archie\Security;
 
 class DSSecure
 {

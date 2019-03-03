@@ -1,6 +1,6 @@
 <?php
 
-namespace Disono\View;
+namespace Archie\View;
 
 class DSTwig
 {

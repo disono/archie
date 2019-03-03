@@ -1,6 +1,6 @@
 <?php
 
-namespace Disono\Database;
+namespace Archie\Database;
 
 class DSDB
 {
