@@ -23,7 +23,7 @@
   },
   "autoload": {
         "psr-4": {
-            "Disono\\": "/"
+            "Archie\\": "src/"
         },
         "files": [
             "functions.php"
