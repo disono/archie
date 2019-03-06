@@ -20,14 +20,31 @@ class DSDB
         return $this;
     }
 
-    public function where($columnLeft, $middle, $columnRight)
+    public function select($columns)
     {
-        $this->where[] = [$columnLeft, $middle, $columnRight];
+        $this->selects = $columns;
+    }
+
+    public function where()
+    {
+        $args = func_get_args();
+
+        if (count($args) === 2) {
+            $this->where[] = ['left' => $args[0], 'right' => $args[1], 'middle' => '='];
+        } else if (count($args) === 3) {
+            $this->where[] = ['left' => $args[0], 'right' => $args[1], 'middle' => $args[2]];
+        }
+
         return $this;
+    }
+
+    public function orWhere()
+    {
+
     }
 
     public function query()
     {
-        $this->connection->query("SELECT * FROM " . $this->name . " WHERE id = %s AND age > %i", $type, 15);
+        return $this->connection->query("SELECT * FROM " . $this->name . " WHERE id = %s", $type);
     }
 }
